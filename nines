@@ -19,7 +19,7 @@ local C = {
 }
 
 local sg = Instance.new("ScreenGui")
-sg.Name = "NINE_HUB"
+sg.Name = "Kidlat Duels"
 sg.ResetOnSpawn = false
 sg.IgnoreGuiInset = true
 sg.Parent = Player.PlayerGui
@@ -217,7 +217,7 @@ titleBarStroke.Transparency = 0.35
 local titleBarLabel = Instance.new("TextLabel", titleBar)
 titleBarLabel.Size = UDim2.new(1, 0, 1, 0)
 titleBarLabel.BackgroundTransparency = 1
-titleBarLabel.Text = "NINE HUB"
+titleBarLabel.Text = "KIDLAT DUELS"
 titleBarLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 titleBarLabel.Font = Enum.Font.GothamBold
 titleBarLabel.TextSize = 20
@@ -241,7 +241,7 @@ menuBtn.Size = UDim2.new(0, 110, 0, 44)
 menuBtn.Position = UDim2.new(0, 24, 0.5, -22)
 menuBtn.BackgroundColor3 = Color3.fromRGB(12, 4, 20)
 menuBtn.BorderSizePixel = 0
-menuBtn.Text = "â˜°  Menu"
+menuBtn.Text = "Menu"
 menuBtn.TextColor3 = C.yellow
 menuBtn.Font = Enum.Font.GothamBold
 menuBtn.TextSize = 18
@@ -349,7 +349,7 @@ local closeBtn = Instance.new("TextButton", header)
 closeBtn.Size = UDim2.new(0, 32, 0, 32)
 closeBtn.Position = UDim2.new(1, -40, 0.5, -16)
 closeBtn.BackgroundTransparency = 1
-closeBtn.Text = "Ã—"
+closeBtn.Text = "❌"
 closeBtn.TextColor3 = C.textDim
 closeBtn.Font = Enum.Font.GothamBold
 closeBtn.TextSize = 22
@@ -384,7 +384,7 @@ contentPad.PaddingBottom = UDim.new(0, 8)
 -- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
 local Connections = {}
-local BoostSpeed = 30
+local BoostSpeed = 55
 local speedBoostEnabled = false
 
 local function getMovementDirection()
@@ -645,7 +645,7 @@ local progressConn = nil
 local StealData = {}
 local STEAL_RADIUS = 20
 local STEAL_DURATION = 0.2
-local StealSpeed = 60
+local StealSpeed = 57.5
 local stealSpeedEnabled = false
 local stealSpeedConn = nil
 
@@ -955,7 +955,7 @@ local function createCard(labelText, hasGear, onToggle, gearLabel, gearDefault, 
         gearBtn.Size = UDim2.new(0, 32, 0, 32)
         gearBtn.Position = UDim2.new(1, -40, 0.5, -16)
         gearBtn.BackgroundTransparency = 1
-        gearBtn.Text = "âš™"
+        gearBtn.Text = "•"
         gearBtn.TextColor3 = C.yellowDim
         gearBtn.Font = Enum.Font.GothamBold
         gearBtn.TextSize = 18
@@ -1150,7 +1150,7 @@ do
     hdrLbl.Size = UDim2.new(1, -16, 1, 0)
     hdrLbl.Position = UDim2.new(0, 8, 0, 0)
     hdrLbl.BackgroundTransparency = 1
-    hdrLbl.Text = "â”€â”€ TP ON RAGDOLL â”€â”€"
+    hdrLbl.Text = "TP ON RAGDOLL"
     hdrLbl.TextColor3 = Color3.fromRGB(150, 60, 210)
     hdrLbl.Font = Enum.Font.GothamBold
     hdrLbl.TextSize = 12
@@ -1431,9 +1431,9 @@ end)
 -- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 --  AUTO RIGHT / AUTO LEFT PATH LOGIC
 -- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
-local VELOCITY_SPEED     = 59.2
-local SECOND_PHASE_SPEED = 29.6
-local BASE_STOP          = 1.35
+local VELOCITY_SPEED     = 57.5
+local SECOND_PHASE_SPEED = 29.4
+local BASE_STOP          = 0
 local MIN_STOP           = 0.65
 local NEXT_POINT_BIAS    = 0.45
 local SMOOTH_FACTOR      = 0.12
@@ -1517,7 +1517,7 @@ local floatingBtns = {}
 
 local function createFloatingBtn(labelText, xOffset, yOffset, onActivate)
     local btn = Instance.new("Frame", sg)
-    btn.Name = "FloatBtn_" .. labelText:gsub("%s+", "_")
+    btn.Name = "FloatBtn_" .. labelText:gsub(".", "_")
     btn.Size = UDim2.new(0, 130, 0, 48)
     btn.Position = UDim2.new(0, xOffset, 0.5, yOffset)
     btn.BackgroundColor3 = Color3.fromRGB(12, 4, 20)
@@ -1795,7 +1795,7 @@ do
     saveBtn.Position = UDim2.new(0, 12, 0, 6)
     saveBtn.BackgroundColor3 = C.yellow
     saveBtn.BorderSizePixel = 0
-    saveBtn.Text = "ðŸ’¾  Save Layout & Config"
+    saveBtn.Text = "Save Layout & Config"
     saveBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
     saveBtn.Font = Enum.Font.GothamBold
     saveBtn.TextSize = 15
@@ -1809,10 +1809,10 @@ do
 
     saveBtn.MouseButton1Click:Connect(function()
         saveConfig()
-        saveBtn.Text = "âœ“  Saved!"
+        saveBtn.Text = "Saved!"
         saveBtn.BackgroundColor3 = Color3.fromRGB(34, 197, 94)
         task.delay(1.8, function()
-            saveBtn.Text = "ðŸ’¾  Save Layout & Config"
+            saveBtn.Text = "Save Layout & Config"
             saveBtn.BackgroundColor3 = C.yellow
         end)
     end)
