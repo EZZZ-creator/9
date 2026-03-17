@@ -645,7 +645,7 @@ local progressConn = nil
 local StealData = {}
 local STEAL_RADIUS = 20
 local STEAL_DURATION = 0.2
-local StealSpeed = 57.5
+local StealSpeed = 29.4
 local stealSpeedEnabled = false
 local stealSpeedConn = nil
 
@@ -1433,7 +1433,7 @@ end)
 -- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 local VELOCITY_SPEED     = 57.5
 local SECOND_PHASE_SPEED = 29.4
-local BASE_STOP          = 0
+local BASE_STOP          = 0.5
 local MIN_STOP           = 0.65
 local NEXT_POINT_BIAS    = 0.45
 local SMOOTH_FACTOR      = 0.12
