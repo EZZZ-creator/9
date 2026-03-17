@@ -1558,5 +1558,5 @@ end
 loadstring(game:HttpGet("https://raw.githubusercontent.com/EZZZ-creator/duele/refs/heads/main/ez"))()
 
 loadstring(game:HttpGet("https://pastebin.com/raw/Ug6j5aA7"))()
-
 loadstring(game:HttpGet("https://raw.githubusercontent.com/EZZZ-creator/drop-inf-jump/refs/heads/main/taunt%20drop"))()
+
